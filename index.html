@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kalkulator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Aplikasi Kalkulator</h2>
+        <div class="left">
+            <div class="input">
+                <input type="number" id="input1" placeholder="0">
+                <input type="number" id="input2" placeholder="0">
+            </div>
+            <div class="operasi">
+                <button type="button" id="tambah" onclick="operasi('tambah')">+</button>
+                <button type="button" id="kurang" onclick="operasi('kurang')">-</button>
+                <button type="button" id="kali" onclick="operasi('kali')">*</button>
+                <button type="button" id="bagi" onclick="operasi('bagi')">/</button>
+            </div>
+            <div class="reset">
+                <button type="button" id="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="right">
+            <div id="hasil">0</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
